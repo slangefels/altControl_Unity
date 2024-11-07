@@ -15,21 +15,21 @@ Adafruit_BNO08x  bno08x(BNO08X_RESET);
 sh2_SensorValue_t sensorValue;
 
 //Union Tempe Wi-Fi
-
+/*
 char ssid[] = "WhiteSky-TheUnion";    // Set your Wi-Fi SSID
 char password[] = "dsvk6gty";    // Set your Wi-Fi password
 int status = WL_IDLE_STATUS;        // Indicator of Wi-Fi status
+*/
 
-/*
 //MIX Center
 char ssid[] = "meshmeshmesh";    // Set your Wi-Fi SSID
 char password[] = "sparkyasu";    // Set your Wi-Fi password
 int status = WL_IDLE_STATUS;        // Indicator of Wi-Fi status
-*/
+
 
 WiFiUDP udp;
 // const char* udpAddress = "192.168.0.8";  // IP address of the computer running Unity
-const char* udpAddress = "10.127.152.140";  // IP address of the computer running Unity
+const char* udpAddress = "192.168.1.79";  // IP address of the computer running Unity
 const int udpPort = 4211;
 
 // Adjust these pin numbers according to the Feather ESP32-S3 pinout
