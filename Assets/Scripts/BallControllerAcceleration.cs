@@ -11,7 +11,7 @@ public class BallControllerAcceleration : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public float speed = 15f; //how fast the ball rolls
+    public float speed = 10f; //how fast the ball rolls
     private Rigidbody rigid; //the ball's rigid body
 
     //IMU values, initialized to random variables
