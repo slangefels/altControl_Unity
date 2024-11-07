@@ -32,20 +32,20 @@ public class BallController : MonoBehaviour
         j = data.jFromIMU;
         k = data.kFromIMU;
 
-        if (i < -40) //right
+        if (i < -20) //right
         {
             rigid.AddForce(Vector3.right * speed);
         }
-        else if (i > 40) //left
+        else if (i > 20) //left
         {
             rigid.AddForce(Vector3.right * -speed);
         }
 
-        if (j < -40) //forward
+        if (j < -20) //forward
         {
             rigid.AddForce(Vector3.forward * speed);
         }
-        else if (j > 40) //backwards
+        else if (j > 15) //backwards
         {
             rigid.AddForce(Vector3.forward * -speed);
         } 
